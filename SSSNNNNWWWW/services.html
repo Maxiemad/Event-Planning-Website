@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Planner</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0"></script>
+
+    </head>
+    
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>Explore Our Services</h1>
+            <p>From shopping to rentals, we have everything for your event planning needs!</p>
+        </section>
+
+        <!-- Shopping Services -->
+        <section class="services-section">
+            <h2>Shopping Services</h2>
+            <div class="service-boxes">
+                <div class="service-box shopping">
+                    <h3>Decor Items</h3>
+                    <p>Premium decorations, centerpieces, and lighting options to make your event magical.</p>
+                    <button class="service-btn">Shop Now</button>
+                </div>
+                <div class="service-box shopping">
+                    <h3>Bridal Accessories</h3>
+                    <p>Exclusive bridal wear, accessories, and everything you need for a dream wedding look.</p>
+                    <button class="service-btn">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rental Services -->
+        <section class="services-section">
+            <h2>Rental Services</h2>
+            <div class="service-boxes">
+                <div class="service-box rental">
+                    <h3>Venue Rentals</h3>
+                    <p>Luxurious venues, banquet halls, and scenic locations available for your big day.</p>
+                    <button class="service-btn">Explore Rentals</button>
+                </div>
+                <div class="service-box rental">
+                    <h3>Costume Rentals</h3>
+                    <p>Elegant costumes for all events, including traditional and modern designs.</p>
+                    <button class="service-btn">Rent Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Wedding Planner. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        particlesJS('particles-js', {
+          particles: {
+            number: {
+              value: 80, // Number of particles
+              density: {
+                enable: true,
+                value_area: 800
+              }
+            },
+            shape: {
+              type: 'circle',
+              stroke: {
+                width: 0,
+                color: '#ffffff'
+              }
+            },
+            opacity: {
+              value: 0.5,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
+              }
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 40,
+                size_min: 0.1,
+                sync: false
+              }
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: '#ffffff',
+              opacity: 0.4,
+              width: 1
+            },
+            move: {
+              enable: true,
+              speed: 6,
+              direction: 'none',
+              random: true,
+              straight: false,
+              out_mode: 'out',
+              bounce: false
+            }
+          },
+          interactivity: {
+            detect_on: 'canvas',
+            events: {
+              onhover: {
+                enable: true,
+                mode: 'repulse'
+              },
+              onclick: {
+                enable: true,
+                mode: 'push'
+              }
+            }
+          },
+          retina_detect: true
+        });
+      </script>
+      
+</body>
+
+</html>

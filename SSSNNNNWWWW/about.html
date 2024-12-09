@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Planner</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0"></script>
+
+    
+    
+</head>
+<body>
+    <div id="particles-js"></div>
+Okay
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>About Us</h1>
+            <p>Your one-stop solution for event rentals and shopping!</p>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="content">
+                <h2>Who We Are</h2>
+                <p>
+                    We specialize in making your events magical and memorable. Our platform offers a variety of <span class="highlight">rental services</span>, from elegant décor to stunning costumes, designed to elevate every occasion. 
+                </p>
+                <p>
+                    Additionally, our <span class="highlight">shopping features</span> bring a curated collection of premium event accessories, allowing you to own timeless pieces for any celebration.
+                </p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="feature-box">
+                <h3>Rental Services</h3>
+                <p>
+                    Enjoy hassle-free rentals with our wide range of options:
+                    <ul>
+                        <li>Event furniture</li>
+                        <li>Costumes and attire</li>
+                        <li>Lighting and sound systems</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="feature-box">
+                <h3>Shopping Features</h3>
+                <p>
+                    Explore our exclusive shopping features:
+                    <ul>
+                        <li>Personalized recommendations</li>
+                        <li>Secure checkout process</li>
+                        <li>Discounts and seasonal offers</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Wedding Planner. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        particlesJS('particles-js', {
+          particles: {
+            number: {
+              value: 80, // Number of particles
+              density: {
+                enable: true,
+                value_area: 800
+              }
+            },
+            shape: {
+              type: 'circle',
+              stroke: {
+                width: 0,
+                color: '#ffffff'
+              }
+            },
+            opacity: {
+              value: 0.5,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
+              }
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 40,
+                size_min: 0.1,
+                sync: false
+              }
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: '#ffffff',
+              opacity: 0.4,
+              width: 1
+            },
+            move: {
+              enable: true,
+              speed: 6,
+              direction: 'none',
+              random: true,
+              straight: false,
+              out_mode: 'out',
+              bounce: false
+            }
+          },
+          interactivity: {
+            detect_on: 'canvas',
+            events: {
+              onhover: {
+                enable: true,
+                mode: 'repulse'
+              },
+              onclick: {
+                enable: true,
+                mode: 'push'
+              }
+            }
+          },
+          retina_detect: true
+        });
+      </script>
+      
+</body>
+</html>

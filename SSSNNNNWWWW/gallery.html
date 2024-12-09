@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Planner</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+    
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>Our Gallery</h1>
+            <p>Discover moments and inspiration from our events.</p>
+        </section>
+
+        <!-- Image Gallery -->
+        <section class="gallery-section">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="gallery1.jpg" alt="Event Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery2.jpg" alt="Event Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery3.jpg" alt="Event Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery4.jpg" alt="Event Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery5.jpg" alt="Event Image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery6.jpg" alt="Event Image 6">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Wedding Planner. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        particlesJS('particles-js', {
+          particles: {
+            number: {
+              value: 80, // Number of particles
+              density: {
+                enable: true,
+                value_area: 800
+              }
+            },
+            shape: {
+              type: 'circle',
+              stroke: {
+                width: 0,
+                color: '#ffffff'
+              }
+            },
+            opacity: {
+              value: 0.5,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
+              }
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 40,
+                size_min: 0.1,
+                sync: false
+              }
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: '#ffffff',
+              opacity: 0.4,
+              width: 1
+            },
+            move: {
+              enable: true,
+              speed: 6,
+              direction: 'none',
+              random: true,
+              straight: false,
+              out_mode: 'out',
+              bounce: false
+            }
+          },
+          interactivity: {
+            detect_on: 'canvas',
+            events: {
+              onhover: {
+                enable: true,
+                mode: 'repulse'
+              },
+              onclick: {
+                enable: true,
+                mode: 'push'
+              }
+            }
+          },
+          retina_detect: true
+        });
+      </script>
+      
+</body>
+
+</html>
